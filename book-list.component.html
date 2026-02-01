@@ -1,0 +1,11 @@
+<div class="book-list-container">
+    <h2>Liste des Livres</h2>
+    <ul>
+      <li *ngFor="let book of books">
+        <a [routerLink]="['/books', book.bookId]">{{ book.title }}</a> par {{ book.author }}
+      </li>
+    </ul>
+    <div *ngIf="errorMessage" class="error">
+      {{ errorMessage }}
+    </div>
+  </div>

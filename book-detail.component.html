@@ -1,0 +1,11 @@
+<div class="book-detail-container" *ngIf="book">
+    <h2>{{ book.title }}</h2>
+    <p><strong>Auteur :</strong> {{ book.author }}</p>
+    <p><strong>Éditeur :</strong> {{ book.editor }}</p>
+    <p><strong>Catégorie :</strong> {{ book.category }}</p>
+    <p><strong>Année de Publication :</strong> {{ book.publication_year }}</p>
+    <p><strong>Résumé :</strong> {{ book.abstruct }}</p>
+  </div>
+  <div *ngIf="errorMessage" class="error">
+    {{ errorMessage }}
+  </div>
